@@ -1,0 +1,166 @@
+<!-- Mason Davidson 5/10/2022 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Cereal 2">
+<meta name="author" content="Mason Davidson">
+<meta name="keywords" content="HTML, CSS">
+<meta name="viewport" content="width=device-width, initial=scale1.0">
+<title>Second Cereal.</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, "times new roman";
+  background-color: gray;
+}
+header {
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  font-family: "times new roman";
+}
+.logo_container{
+width: 60%;
+margin-top:5px;
+float: left;
+}
+
+.nav_container{
+width: 40%;
+margin-top:5px;
+float: right;
+text-align: right;
+}
+
+nav {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  background-color: yellow;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  font-family: "times new roman";
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #833B01;
+  font-family: Helvetica;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left_column{
+float:right;
+width: 30%;
+padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #F1FFFA;
+  width: 100%;
+  font-family: Helvetica;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid brown;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+footer {
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-family: "times new roman";
+}
+
+.clear{clear: both;}
+
+@media (max-width: 1200px) {
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #FFFFFA;
+  width: 110%;
+}
+  @media only screen and (max-width: 1024px){
+.grid-container > div {
+  background-color: purple;
+}
+  .grid-item img {
+  width: 100%}}
+}
+</style>
+</head>
+<body>
+    
+<div class="nav_container">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="cereal1.html">Cereal 1</a></li>
+	  <li><a href="cereal3.html">Cereal 3</a></li>
+	  <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </nav>
+  </div>
+ 
+ <div class="clear"></div>
+ 
+<header>
+    <p> Welcome to the Looped Cereal Page! </p>
+</header>
+
+<section>
+ 
+ <div class="left_column">
+   <h2>The first mainstream looped cereal, Cheerios were invented in 1941, right after the end of the Great Depression. At the time, the most popular cereals were Wheaties and Corn Flakes. General Mills decided to compete by making a tastier, funner shaped product. <br> Usual Ingredients: Oats, Sugar, Salt and Corn Starch.</h2>
+ </div>
+ 
+  <article>
+    <h3>Looped Cereal Examples</h3>
+    <p>The first and most popular Cereal to ever exist, none other than Cheerios. Originally founded as way to shake up the depression-era landscape of breakfast in a cheap and more entertaining way than foods such as oatmeal. </p>
+    <p>The second cereal, Froot Loops are a fun 1963 variety of cereal. With larger rings than cheerios, the colorful shapes are a stape of childhood.</p>
+	<p>The third and final looped cereal example is Apple Jacks, a large ringed cinnamon and apple cereal, it was originally invented in 1965 as Apple O's, they were renamed in 1971. </p>
+  
+  <div class="grid-container">
+    <div class="grid-item"><img src="images/cheerios.jpg" alt="200 placeholder" width="100"></div>
+    <div class="grid-item"><img src="images/froot.jpg" alt="200 placeholder" width="100"></div>
+    <div class="grid-item"><img src="images/apple.jpg" alt="200 placeholder" width="100"></div>  
+  </div>
+  
+  </article>
+</section>
+
+<footer>
+  <p></p>
+</footer>
+
+</body>
+</html>

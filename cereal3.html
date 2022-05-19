@@ -1,0 +1,167 @@
+<!-- Mason Davidson 5/10/2022 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Cereal 3">
+<meta name="author" content="Mason Davidson">
+<meta name="keywords" content="HTML, CSS">
+<meta name="viewport" content="width=device-width, initial=scale1.0">
+<title>Third Cereal.</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, "times new roman";
+  background-color: gray;
+}
+header {
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  font-family: "times new roman";
+}
+.logo_container{
+width: 60%;
+margin-top:5px;
+float: left;
+}
+
+.nav_container{
+width: 40%;
+margin-top:5px;
+float: right;
+text-align: right;
+}
+
+nav {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  background-color: yellow;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  font-family: "times new roman";
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #833B01;
+  font-family: Helvetica;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left_column{
+float:right;
+width: 30%;
+padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #F1FFFA;
+  width: 100%;
+  font-family: Helvetica;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid brown;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Helvetica;
+  max-width: 100%;
+}
+
+footer {
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-family: "times new roman";
+}
+
+.clear{clear: both;}
+
+@media (max-width: 1200px) {
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #FFFFFA;
+  width: 100%;
+}
+  @media only screen and (max-width: 600px){
+.grid-container > div {
+  background-color: pink;
+}
+  .grid-item img {
+  width: 100%}}
+}
+</style>
+</head>
+<body>
+    
+<div class="nav_container">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="cereal1.html">Cereal 1</a></li>
+	  <li><a href="cereal2.html">Cereal 2</a></li>
+	  <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </nav>
+  </div>
+ 
+ <div class="clear"></div>
+ 
+<header>
+    <p> Welcome to the Spherical Cereal Page! </p>
+</header>
+
+<section>
+ 
+ <div class="left_column">
+   <h2>Most spherical cereal we know and love today are thanks to the invention of the puffing gun. This device allowed easy mass production of heated grains to allow for cheap, soft and highly malleable shapes. <br> Usual Ingredients: Corn, Sugar, Salt and Syrup. </h2>
+ </div>
+ 
+  <article>
+    <h3>Spherical Cereal Examples</h3>
+    <p>The first cereal, Kix, was invented in 1937 after the invention of the puffing gun. The new technology allowed General Mills to create a new shape of cereal to supplement their standard bland shaped cereals.</p>
+    <p>The second cereal, Trix, is a colored addition to the spherical cereal family added in 1954. Created as a colorful and sugary version of Kix cereal, the sweet artificial fruit flavors have been a success for decades.</p>
+	<p>The third cereal, Reese's Puffs, is a more recent addition, created in 1994. It was created as a candy flavored cereal, but unlike many which act as novelty flavors which rise and get discontinued in only a few months or years. Reese's Puffs have maintained popularity for almost 30 years.</p>
+  
+  <div class="grid-container">
+    <div class="grid-item"><img src="images/kix.jpg" alt="200 placeholder" width="100"></div>
+    <div class="grid-item"><img src="images/trix.jpg" alt="200 placeholder" width="100"></div>
+    <div class="grid-item"><img src="images/reeses.jpg" alt="200 placeholder" width="100"></div>  
+  </div>
+  
+  </article>
+</section>
+
+<footer>
+  <p></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!-- Mason Davidson 5/10/2022 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Cereal 1">
+<meta name="author" content="Mason Davidson">
+<meta name="keywords" content="HTML, CSS">
+<meta name="viewport" content="width=device-width, initial=scale1.0">
+<title>First Cereal.</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, "times new roman";
+  background-color: gray;
+}
+header {
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  font-family: "times new roman";
+}
+.logo_container{
+width: 60%;
+margin-top:5px;
+float: left;
+}
+
+.nav_container{
+width: 40%;
+margin-top:5px;
+float: right;
+text-align: right;
+}
+
+nav {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  background-color: yellow;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  font-family: "times new roman";
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #833B01;
+  font-family: Helvetica;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left_column{
+float:right;
+width: 30%;
+padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #F1FFFA;
+  width: 100%;
+  font-family: Helvetica;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid brown;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+footer {
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-family: "times new roman";
+}
+
+.clear{clear: both;}
+
+@media (max-width: 1200px) {
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #FFFFFA;
+  width: 110%;
+}
+  @media only screen and (max-width: 768px){
+.grid-container > div {
+  background-color: red;
+}
+.grid-item img {
+ width: 100%}}
+}
+</style>
+</head>
+<body>
+    
+<div class="nav_container">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="cereal2.html">Cereal 2</a></li>
+	  <li><a href="cereal3.html">Cereal 3</a></li>
+	  <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </nav>
+  </div>
+ 
+ <div class="clear"></div>
+ 
+<header>
+    <p> Welcome to the Flaked Cereal Page! </p>
+</header>
+
+<section>
+ 
+ <div class="left_column">
+   <h2>The first flaked cereal, the famous Corn Flakes, were created on accident by a Religious group known as the Seventh-day Adventists in an attempt to find a more humble food, accommodating to their beliefs. Corn Flakes as a brand was invented by Dr. John Harvey Kellog, a fellow Adventist, for use in controlling sin, specifically lust. Receiving positive reviews from patients at a Sanitarium he worked at, he decided to mass market it and formed the famous company Kellogs, starting it's legacy in the cereal business.<br> Usual Ingredients: Sugar, Corn, Salt and Malt Flavor. </h2>
+ </div>
+ 
+  <article>
+    <h3>Flaked Cereal Examples.</h3>
+    <p>The first example, Corn flakes are perhaps the most recognizable flaked cereal. Invented in 1894, Corn Flakes have been the classic symbol for a standard breakfast for a century.</p>
+    <p>The second cereal in question is Frosted Flakes, invented in 1952, this classic glazed flaked cereal has become a symbol of children's breakfast for decades.</p>
+	<p>The third cereal, Raisin Bran, was an 1926 addition to the standard Corn Flake cereal, heavily debated as a "healthy alternative", Raisin Bran adds a little extra to a standard bowl of Corn Flakes.</p>
+  
+  <div class="grid-container">
+    <div class="grid-item"><img src="images/corn.jpg" alt="200 placeholder" width="100"></div>
+    <div class="grid-item"><img src="images/frosted.jpg" alt="200 placeholder" width="100"></div>
+    <div class="grid-item"><img src="images/raisin.jpg" alt="200 placeholder" width="100"></div>  
+  </div>
+  
+  </article>
+</section>
+
+<footer>
+  <p></p>
+</footer>
+
+</body>
+</html>

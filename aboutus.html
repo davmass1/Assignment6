@@ -1,0 +1,130 @@
+<!-- Mason Davidson 5/11/2022 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="About Us">
+<meta name="author" content="Mason Davidson">
+<meta name="keywords" content="HTML, CSS">
+<meta name="viewport" content="width=device-width, initial=scale1.0">
+<title>About us page.</title>
+<link rel="stylesheet" href="css/style.css" type=text/css>
+<style> 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, "times new roman";
+  background-color: #efc050;
+}
+header {
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  font-family: "times new roman";
+}
+.logo_container{
+width: 60%;
+margin-top:5px;
+float: left;
+}
+
+.nav_container{
+width: 40%;
+margin-top:5px;
+float: right;
+text-align: right;
+}
+
+nav {
+  width: 100%;
+  padding: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  background-color: yellow;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  font-family: "times new roman";
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #efc050;
+  width: 100%;
+  font-family: Helvetica;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+footer {
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-family: "times new roman";
+}
+
+.clear{clear: both;}
+
+@media (max-width: 1200px) {
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #FFFFFA;
+  width: 110%;
+}
+  .grid-item img {
+  width: 100%}
+}
+</style>
+</head>
+<body>
+    
+<div class="nav_container">
+  <nav>
+    <ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="cereal1.html">Cereal 1</a></li>
+	  <li><a href="cereal2.html">Cereal 2</a></li>
+	  <li><a href="cereal3.html">Cereal 3</a></li>
+    </ul>
+  </nav>
+  </div>
+ 
+ <div class="clear"></div>
+ 
+<header>
+    <p> Welcome to the About us Page! </p>
+</header>
+  <article>
+    <h3>Contact Information</h3>
+    <p>Location: 123 Main Street, Star City, MN, 55113</p>
+	<p>Hours: 6am-9pm Mon-Sat. Closed Sunday</p>
+	<p>Phone Number: 123-456-7890</p>
+    <p>Contact Email: cereal@gmail.com</p>
+	  <div class="grid-container"></div>
+    <div class="grid-item"><img src="images/cereals.jpg" alt="400 placeholder"></div>
+  </article>
+</body>
+</html>
